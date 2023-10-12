@@ -1,0 +1,246 @@
+2021-06-29 21:56:41 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 21:57:56 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 21:59:21 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:02:03 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:33:44 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:39:08 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:41:29 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:46:42 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:46:42 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:46:49 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:46:56 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:47:05 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:47:24 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:48:48 执行语句：select * from t_student_user where  student_number='B1515'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:48:52 执行语句：select * from t_student_user where  student_number='B1515'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:48:56 执行语句：select * from t_student_user where  student_number='B1515'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:51:11 执行语句：select count(*) from t_student_user where  student_number='B1515'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:51:15 执行语句：select count(*) from t_student_user where  student_number='B1515'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:51:24 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:51:24 执行语句：select count(*) from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:51:35 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:51:35 执行语句：select count(*) from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:52:22 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:52:22 执行语句：select count(*) from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:52:34 执行语句：select count(*) from t_student_user where  student_number='B1148'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:52:43 执行语句：select * from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-06-29 22:52:43 执行语句：select count(*) from t_student_user where  student_number='B1146'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-05 21:12:39 执行语句：select * from t_teacher_user where  email='asdf'and password='3da541559918a808c2402bba5012f6c60b27661c'  且执行成功
+2021-07-05 21:15:22 执行语句：select * from t_admin_user where  user_name='asdf'and password='3da541559918a808c2402bba5012f6c60b27661c'  且执行成功
+2021-07-05 21:17:49 执行语句：select * from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:17:50 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:21:15 执行语句：select * from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:23:02 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:23:06 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:23:10 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:25:38 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:25:52 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:26:05 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:26:06 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:29:37 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:29:43 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:34:57 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:36:55 执行语句：select * from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:44:31 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:44:46 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:47:08 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:48:25 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 21:48:59 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:00:38 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:00:39 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:00:39 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:00:44 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:00:45 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:00:46 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:01:12 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:01:14 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:01:28 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:42:03 执行语句：select * from t_teacher_user where  email='David@gmail.com'and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-05 22:42:14 执行语句：select * from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:47:04 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:47:09 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:47:33 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:47:34 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 22:49:23 执行语句：select count(*) from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 23:08:25 mysql_query error:   select * from t_admin_user where d user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'   You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'' at line 1
+2021-07-05 23:08:30 mysql_query error:   select * from t_admin_user where d user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'   You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'' at line 1
+2021-07-05 23:08:57 执行语句：select * from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 23:09:03 执行语句：select * from t_admin_user where  user_name='admin'and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 23:09:57 mysql_query error:   select * from t_admin_user where d user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'   You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'' at line 1
+2021-07-05 23:10:24 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 23:10:30 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 23:12:43 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 23:27:13 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 23:33:03 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 23:33:23 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 23:33:29 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-05 23:33:31 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-06 22:30:03 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-06 22:51:06 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-06 22:51:26 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-06 22:51:29 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-06 23:30:14 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-07 18:33:11 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-07 18:33:17 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-07 18:39:33 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-07 20:09:12 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-07 20:40:20 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-07 20:40:38 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-07 20:40:43 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-07 20:40:48 执行语句：select count(*) from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-07 21:02:26 执行语句：select * from t_teacher_user where  email='Jeremy@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-07 21:02:52 执行语句：select * from t_teacher_user where  email='Jeremy@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-07 21:03:03 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-09 16:41:26 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-09 16:45:03 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-09 16:45:43 执行语句：select count(*) from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-09 16:52:50 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-13 21:21:27 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-13 21:45:30 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-13 22:51:59 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-13 23:09:01 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-13 23:09:47 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-13 23:11:30 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-15 20:23:30 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-15 20:23:41 执行语句：select * from t_admin_user where  user_name='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-15 20:23:48 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-15 21:41:22 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-15 22:59:45 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-18 22:09:42 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-18 22:11:32 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-18 22:12:03 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-18 23:02:31 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-18 23:19:19 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-19 00:36:51 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-19 01:37:29 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-19 01:46:36 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-19 01:47:13 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-21 08:32:33 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-21 09:02:47 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-21 09:06:36 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-21 09:07:52 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-21 09:09:57 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='f7c3bc1d808e04732adf679965ccc34ca7ae3441'  且执行成功
+2021-07-21 09:10:16 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-21 10:23:58 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-21 10:57:24 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-21 11:54:05 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-21 12:55:16 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-21 21:17:02 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-21 21:17:06 执行语句：select * from t_admin_user where  user_name='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-21 21:17:11 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-22 11:11:02 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-22 12:12:35 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-22 14:37:36 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='5b3ef43905fd037de5017c2aa06c8a8a39d80098'  且执行成功
+2021-07-22 14:37:41 执行语句：select * from t_admin_user where  user_name='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-22 14:37:46 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-22 15:45:49 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-22 17:02:53 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-22 18:03:18 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-22 18:46:46 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-22 18:47:11 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-25 21:08:37 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-25 22:10:09 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-25 23:08:14 执行语句：select SUM(tm.tmark) from t_subject ts LEFT JOIN (
+    Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+    where a.subject_id='60f44d59893e9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-07-25 23:09:53 执行语句：select SUM(tm.tmark) from t_subject ts LEFT JOIN (
+    Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+    where a.subject_id='60f44d59893e9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-07-25 23:10:11 执行语句：select SUM(tm.tmark) as tmar from t_subject ts LEFT JOIN (
+    Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+    where a.subject_id='60f44d59893e9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-07-25 23:11:04 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+    Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+    where a.subject_id='60f44d59893e9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-07-25 23:26:43 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-25 23:39:16 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-25 23:42:35 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-07-25 23:42:51 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-25 23:52:23 执行语句：select * from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-26 15:04:35 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-26 16:06:54 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-26 16:25:05 执行语句：select * from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-26 16:25:42 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-26 17:30:43 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-26 19:22:39 执行语句：select * from t_teacher_user where  email='David@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-04 23:08:28 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-04 23:08:58 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-04 23:09:13 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 09:21:26 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-05 09:21:39 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-05 09:21:46 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 10:22:47 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 11:23:47 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:05:50 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:14:49 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-05 16:15:23 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:15:39 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:16:12 执行语句：select * from t_admin_user where  user_name='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:16:19 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-05 16:16:44 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:16:51 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:17:01 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:17:34 执行语句：select * from t_teacher_user where  email='SooLK@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:18:35 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:22:59 执行语句：select * from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:27:56 执行语句：select * from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:29:18 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:35:25 执行语句：select * from t_teacher_user where  email='SooLK@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:42:51 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:43:02 执行语句：select * from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:48:06 执行语句：select * from t_teacher_user where  email='SooLK@gmail.com' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 17:18:13 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 17:19:09 执行语句：select * from t_teacher_user where  email='KoongKL@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 17:49:08 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 17:53:09 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 23:07:21 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-06 15:24:41 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-06 15:24:53 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-07 21:00:17 执行语句：select * from t_admin_user where  user_name='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-07 21:00:20 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-07 21:31:30 执行语句：select * from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-07 21:36:56 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 11:52:03 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-09 11:52:22 执行语句：select * from t_admin_user where  user_name='Saniah@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 11:52:39 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 11:52:51 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 11:53:03 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-09 11:53:27 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 11:53:36 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 11:54:10 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-09 11:56:28 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-09 11:56:42 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-09 11:56:53 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 12:00:58 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-09 12:01:03 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-09 12:29:26 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 12:32:24 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-09 12:32:40 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 12:36:48 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-09 12:37:07 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 16:42:38 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 17:43:56 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 18:50:09 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 19:34:07 执行语句：select * from t_student_user where  student_number='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 19:34:09 执行语句：select * from t_admin_user where  user_name='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 19:34:10 执行语句：select * from t_admin_user where  user_name='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 19:34:15 执行语句：select * from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-12 15:46:22 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 15:46:50 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-13 15:49:45 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 16:00:35 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-13 16:05:14 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 16:09:21 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 16:10:08 执行语句：select * from t_admin_user where  user_name='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 16:10:12 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 16:17:27 执行语句：select * from t_admin_user where  user_name='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 16:17:30 执行语句：select * from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 16:22:31 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 16:42:00 执行语句：select * from t_teacher_user where  email='Saniah@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 16:42:47 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-13 16:43:33 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 16:51:48 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-13 16:53:32 执行语句：select * from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-15 12:21:49 执行语句：select * from t_admin_user where  user_name='admin' and password='d033e22ae348aeb5660fc2140aec35850c4da997'  且执行成功
+2021-08-19 10:56:24 执行语句：select * from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-19 10:57:00 执行语句：select * from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功

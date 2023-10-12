@@ -1,0 +1,434 @@
+2021-07-25 23:52:23 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-25 23:52:23 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-07-25 23:52:23 执行语句：select count(*) from t_semester s,t_semester_student st    且执行成功
+2021-07-25 23:52:23 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id   limit 0,10
+2021-07-25 23:52:23 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id   limit 0,10 且执行成功
+2021-07-25 23:52:23 执行语句：select count(*) from t_subject where semester_id='60f43f46c73a6'  且执行成功
+2021-07-25 23:52:23 执行语句：select count(*) from t_subject where semester_id='60f43f46c73a6'  且执行成功
+2021-07-25 23:52:23 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = ''   且执行成功
+2021-07-25 23:52:23 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = ''   limit 0,10
+2021-07-25 23:52:23 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = ''   limit 0,10 且执行成功
+2021-07-25 23:54:16 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-25 23:54:16 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-07-25 23:54:16 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-07-25 23:54:16 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-07-25 23:54:16 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-07-25 23:54:16 执行语句：select count(*) from t_subject where semester_id='60f43f46c73a6'  且执行成功
+2021-07-25 23:54:16 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-07-25 23:54:16 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-07-25 23:54:16 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-07-25 23:54:16 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='60f44d59893e9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-07-25 23:54:16 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='60f468d591780' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-07-25 23:54:45 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-25 23:55:16 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-25 23:55:16 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-07-25 23:55:16 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-07-25 23:55:16 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-07-25 23:55:16 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-07-25 23:55:16 执行语句：select count(*) from t_subject where semester_id='60f43f46c73a6'  且执行成功
+2021-07-25 23:55:16 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-07-25 23:55:16 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-07-25 23:55:16 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-07-25 23:55:16 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='60f44d59893e9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-07-25 23:55:16 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='60f468d591780' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-07-26 16:25:05 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-07-26 16:25:05 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-07-26 16:25:05 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-07-26 16:25:05 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-07-26 16:25:05 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-07-26 16:25:05 执行语句：select count(*) from t_subject where semester_id='60f43f46c73a6'  且执行成功
+2021-07-26 16:25:05 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-07-26 16:25:05 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-07-26 16:25:05 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-07-26 16:25:05 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='60f44d59893e9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-07-26 16:25:05 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='60f468d591780' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:22:59 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:22:59 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-08-05 16:22:59 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-08-05 16:22:59 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-08-05 16:22:59 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-08-05 16:22:59 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-05 16:22:59 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-08-05 16:22:59 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-08-05 16:22:59 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-08-05 16:22:59 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:22:59 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:22:59 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772667aff2' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:22:59 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107727c3e89b' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:22:59 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772959e863' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:22:59 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772a82bab9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:22:59 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107dcf3d745a' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:24:34 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:24:34 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-08-05 16:24:34 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-08-05 16:24:34 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-08-05 16:24:34 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-08-05 16:24:34 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-05 16:24:34 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-08-05 16:24:34 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-08-05 16:24:34 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-08-05 16:24:34 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:24:34 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:24:34 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772667aff2' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:24:34 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107727c3e89b' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:24:34 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772959e863' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:24:34 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772a82bab9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:24:34 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107dcf3d745a' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:28 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:27:28 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-08-05 16:27:28 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-08-05 16:27:28 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-08-05 16:27:28 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-08-05 16:27:28 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-05 16:27:28 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-08-05 16:27:28 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-08-05 16:27:28 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-08-05 16:27:28 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:28 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:28 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772667aff2' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:28 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107727c3e89b' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:28 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772959e863' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:28 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772a82bab9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:28 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107dcf3d745a' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:29 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:27:29 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-08-05 16:27:29 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-08-05 16:27:29 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-08-05 16:27:29 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-08-05 16:27:29 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-05 16:27:29 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-08-05 16:27:29 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-08-05 16:27:29 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-08-05 16:27:29 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:29 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:29 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772667aff2' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:29 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107727c3e89b' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:29 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772959e863' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:29 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772a82bab9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:29 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107dcf3d745a' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:48 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:27:56 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:27:56 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-08-05 16:27:56 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-08-05 16:27:56 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-08-05 16:27:56 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-08-05 16:27:56 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-05 16:27:56 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-08-05 16:27:56 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-08-05 16:27:56 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-08-05 16:27:56 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:56 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:56 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772667aff2' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:56 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107727c3e89b' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:56 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772959e863' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:56 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772a82bab9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:27:56 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107dcf3d745a' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:43:02 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-05 16:43:02 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-08-05 16:43:02 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-08-05 16:43:02 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-08-05 16:43:02 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-08-05 16:43:02 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-05 16:43:02 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-08-05 16:43:02 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-08-05 16:43:02 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-08-05 16:43:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:43:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:43:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772667aff2' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:43:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107727c3e89b' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:43:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772959e863' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:43:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772a82bab9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-05 16:43:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107dcf3d745a' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-07 21:31:30 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-07 21:31:30 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-08-07 21:31:30 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-08-07 21:31:30 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-08-07 21:31:30 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-08-07 21:31:30 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-07 21:31:30 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-08-07 21:31:30 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-08-07 21:31:30 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-08-07 21:31:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-07 21:31:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-07 21:31:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772667aff2' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-07 21:31:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107727c3e89b' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-07 21:31:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772959e863' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-07 21:31:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772a82bab9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-07 21:31:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107dcf3d745a' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:34:15 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 19:34:15 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-08-09 19:34:15 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-08-09 19:34:15 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-08-09 19:34:15 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-08-09 19:34:15 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-09 19:34:15 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-08-09 19:34:15 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-08-09 19:34:15 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-08-09 19:34:15 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107dcf3d745a' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:34:15 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:34:15 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:34:15 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772667aff2' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:34:15 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107727c3e89b' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:34:15 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772959e863' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:34:15 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772a82bab9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:36:02 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-09 19:36:02 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-08-09 19:36:02 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-08-09 19:36:02 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-08-09 19:36:02 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-08-09 19:36:02 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-09 19:36:02 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-08-09 19:36:02 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-08-09 19:36:02 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-08-09 19:36:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107dcf3d745a' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:36:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:36:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:36:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772667aff2' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:36:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107727c3e89b' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:36:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772959e863' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-09 19:36:02 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772a82bab9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-13 16:17:30 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-13 16:17:30 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-08-13 16:17:30 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-08-13 16:17:30 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-08-13 16:17:30 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-08-13 16:17:30 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-13 16:17:30 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-08-13 16:17:30 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-08-13 16:17:30 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-08-13 16:17:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-13 16:17:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-13 16:17:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772667aff2' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-13 16:17:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107727c3e89b' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-13 16:17:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772959e863' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-13 16:17:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772a82bab9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-13 16:17:30 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107dcf3d745a' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-13 16:17:36 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-19 10:31:23 执行语句：select count(*) from t_teacher_user where  email='sc.lim@firstcity.edu.my' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-19 10:31:23 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = ''   且执行成功
+2021-08-19 10:31:23 执行语句：select count(*) from t_semester s,t_semester_student st    且执行成功
+2021-08-19 10:31:23 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id   limit 0,10
+2021-08-19 10:31:23 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id   limit 0,10 且执行成功
+2021-08-19 10:31:23 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-19 10:31:23 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-19 10:31:23 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-19 10:31:23 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-19 10:31:23 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-19 10:31:23 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id   且执行成功
+2021-08-19 10:31:23 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id   limit 0,10
+2021-08-19 10:31:23 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id   limit 0,10 且执行成功
+2021-08-19 10:31:23 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = '' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:31:23 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = '' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:31:23 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = '' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:31:23 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = '' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:31:23 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = '' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:31:23 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = '' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:31:23 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = '' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:31:23 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = '' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:31:23 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = '' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:31:23 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = '' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:57:00 执行语句：select count(*) from t_student_user where  student_number='B1146' and password='7c4a8d09ca3762af61e59520943dc26494f8941b'  且执行成功
+2021-08-19 10:57:00 执行语句：select t.user_name,t.email,t.ic_passport,t.status  from t_student_user t  where t.student_number = 'B1146'   且执行成功
+2021-08-19 10:57:00 执行语句：select count(*) from t_semester s,t_semester_student st  where s.semester_id = st.semester_id and st.student_number = 'B1146'  且执行成功
+2021-08-19 10:57:00 将执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10
+2021-08-19 10:57:00 执行语句：select s.semester_id,s.program_id,s.semester_infor,s.semester_date,p.name as program_name  from t_semester s,t_program p,t_semester_student st  where s.program_id=p.program_id and s.semester_id = st.semester_id and st.student_number = 'B1146'  limit 0,10 且执行成功
+2021-08-19 10:57:00 执行语句：select count(*) from t_subject where semester_id='610771e684671'  且执行成功
+2021-08-19 10:57:00 执行语句：select count(*) from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   且执行成功
+2021-08-19 10:57:00 将执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10
+2021-08-19 10:57:00 执行语句：select s.subject_id,s.model_code,s.model_name,s.model_sname,s.lecturer,s.program_id,p.name as program_name,t.user_name as teacher_name,sm.semester_date,sm.semester_infor,s.semester_id  from t_subject s,t_program p,t_teacher_user t,t_semester sm,t_semester_student tss  where s.program_id=p.program_id and s.lecturer = t.staff_number and s.semester_id = sm.semester_id and s.semester_id = tss.semester_id and tss.student_number = 'B1146'   limit 0,10 且执行成功
+2021-08-19 10:57:00 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107723bd7181' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:57:00 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107724f436d0' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:57:00 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772667aff2' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:57:00 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107727c3e89b' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:57:00 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772959e863' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:57:00 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='610772a82bab9' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:57:00 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='6107dcf3d745a' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
+2021-08-19 10:57:00 执行语句：select FORMAT(SUM(tm.tmark),2) as tmar from t_subject ts LEFT JOIN (
+Select a.subject_id,a.weight *  sum(qm.mark)/100 as tmark from t_assessment a,t_question q, t_question_marks qm 
+where a.subject_id='611630e958e37' and a.assessment_id = q.assessment_id and q.question_id = qm.question_id and qm.student_number = 'B1146' group BY a.assessment_id) tm ON tm.subject_id = ts.subject_id 且执行成功
